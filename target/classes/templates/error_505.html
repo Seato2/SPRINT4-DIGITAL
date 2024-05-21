@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Internal Server Error</title>
+</head>
+<body>
+<h1>Internal Server Error</h1>
+<p th:text="${error}"></p>
+<p th:text="${message}"></p>
+<p>Status code: <span th:text="${status}"></span></p>
+<p>Path: <span th:text="${path}"></span></p>
+<p>Timestamp: <span th:text="${timestamp}"></span></p>
+<a href="/">Go to Home</a>
+</body>
+</html>

@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.digitalSprint4.controller.CotacaoControllerTest" time="3.303" tests="2" errors="0" skipped="0" failures="2">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\sean\Desktop\digitalSprint4\target\test-classes;C:\Users\sean\Desktop\digitalSprint4\target\classes;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.0-SNAPSHOT\spring-boot-starter-data-jpa-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.0-SNAPSHOT\spring-boot-starter-aop-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.0-SNAPSHOT\spring-boot-starter-jdbc-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\sean\.m2\repository\org\springframework\spring-jdbc\6.1.7\spring-jdbc-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\data\spring-data-jpa\3.3.0\spring-data-jpa-3.3.0.jar;C:\Users\sean\.m2\repository\org\springframework\data\spring-data-commons\3.3.0\spring-data-commons-3.3.0.jar;C:\Users\sean\.m2\repository\org\springframework\spring-orm\6.1.7\spring-orm-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-context\6.1.7\spring-context-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-tx\6.1.7\spring-tx-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-beans\6.1.7\spring-beans-6.1.7.jar;C:\Users\sean\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\sean\.m2\repository\org\springframework\spring-aspects\6.1.7\spring-aspects-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-oauth2-client\3.3.0-SNAPSHOT\spring-boot-starter-oauth2-client-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.0-SNAPSHOT\spring-boot-starter-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot\3.3.0-SNAPSHOT\spring-boot-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.0-SNAPSHOT\spring-boot-autoconfigure-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.0-SNAPSHOT\spring-boot-starter-logging-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\sean\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\sean\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\sean\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\sean\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\sean\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-config\6.3.0-SNAPSHOT\spring-security-config-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-core\6.3.0-SNAPSHOT\spring-security-core-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-crypto\6.3.0-SNAPSHOT\spring-security-crypto-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\spring-expression\6.1.7\spring-expression-6.1.7.jar;C:\Users\sean\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\sean\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-oauth2-client\6.3.0-SNAPSHOT\spring-security-oauth2-client-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-oauth2-core\6.3.0-SNAPSHOT\spring-security-oauth2-core-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\nimbusds\oauth2-oidc-sdk\9.43.4\oauth2-oidc-sdk-9.43.4.jar;C:\Users\sean\.m2\repository\com\github\stephenc\jcip\jcip-annotations\1.0-1\jcip-annotations-1.0-1.jar;C:\Users\sean\.m2\repository\com\nimbusds\content-type\2.2\content-type-2.2.jar;C:\Users\sean\.m2\repository\com\nimbusds\lang-tag\1.7\lang-tag-1.7.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-oauth2-jose\6.3.0-SNAPSHOT\spring-security-oauth2-jose-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.37.3\nimbus-jose-jwt-9.37.3.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.0-SNAPSHOT\spring-boot-starter-security-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\spring-aop\6.1.7\spring-aop-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-web\6.3.0-SNAPSHOT\spring-security-web-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.3.0-SNAPSHOT\spring-boot-starter-thymeleaf-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.2.RELEASE\thymeleaf-spring6-3.1.2.RELEASE.jar;C:\Users\sean\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\sean\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\sean\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.0-SNAPSHOT\spring-boot-starter-web-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.0-SNAPSHOT\spring-boot-starter-json-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.1\jackson-module-parameter-names-2.17.1.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.0-SNAPSHOT\spring-boot-starter-tomcat-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.24\tomcat-embed-core-10.1.24.jar;C:\Users\sean\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.24\tomcat-embed-el-10.1.24.jar;C:\Users\sean\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.24\tomcat-embed-websocket-10.1.24.jar;C:\Users\sean\.m2\repository\org\springframework\spring-web\6.1.7\spring-web-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-webmvc\6.1.7\spring-webmvc-6.1.7.jar;C:\Users\sean\.m2\repository\org\thymeleaf\extras\thymeleaf-extras-springsecurity6\3.1.2.RELEASE\thymeleaf-extras-springsecurity6-3.1.2.RELEASE.jar;C:\Users\sean\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.0-SNAPSHOT\spring-boot-starter-test-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-test\3.3.0-SNAPSHOT\spring-boot-test-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.0-SNAPSHOT\spring-boot-test-autoconfigure-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\sean\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\sean\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\sean\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\sean\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\sean\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\sean\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\sean\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\sean\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sean\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\sean\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\sean\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\sean\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\sean\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sean\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\sean\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\sean\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\sean\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\sean\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\sean\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\sean\.m2\repository\org\springframework\spring-core\6.1.7\spring-core-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-jcl\6.1.7\spring-jcl-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-test\6.1.7\spring-test-6.1.7.jar;C:\Users\sean\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-test\6.3.0-SNAPSHOT\spring-security-test-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\sean\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\sean\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\sean\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\sean\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\sean\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar;C:\Users\sean\.m2\repository\org\hibernate\orm\hibernate-core\6.2.0.Final\hibernate-core-6.2.0.Final.jar;C:\Users\sean\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\sean\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\sean\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\sean\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\sean\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\sean\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\sean\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\sean\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\sean\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\sean\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\sean\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\sean\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\sean\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\sean\.m2\repository\jakarta\servlet\jakarta.servlet-api\5.0.0\jakarta.servlet-api-5.0.0.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="America/Sao_Paulo"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="BR"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
+    <property name="sun.java.command" value="C:\Users\sean\AppData\Local\Temp\surefire1027850057847892019\surefirebooter-20240520195752272_3.jar C:\Users\sean\AppData\Local\Temp\surefire1027850057847892019 2024-05-20T19-57-52_134-jvmRun1 surefire-20240520195752272_1tmp surefire_0-20240520195752272_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\sean\Desktop\digitalSprint4\target\test-classes;C:\Users\sean\Desktop\digitalSprint4\target\classes;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.3.0-SNAPSHOT\spring-boot-starter-data-jpa-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.3.0-SNAPSHOT\spring-boot-starter-aop-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.3.0-SNAPSHOT\spring-boot-starter-jdbc-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\zaxxer\HikariCP\5.1.0\HikariCP-5.1.0.jar;C:\Users\sean\.m2\repository\org\springframework\spring-jdbc\6.1.7\spring-jdbc-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\data\spring-data-jpa\3.3.0\spring-data-jpa-3.3.0.jar;C:\Users\sean\.m2\repository\org\springframework\data\spring-data-commons\3.3.0\spring-data-commons-3.3.0.jar;C:\Users\sean\.m2\repository\org\springframework\spring-orm\6.1.7\spring-orm-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-context\6.1.7\spring-context-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-tx\6.1.7\spring-tx-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-beans\6.1.7\spring-beans-6.1.7.jar;C:\Users\sean\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\sean\.m2\repository\org\springframework\spring-aspects\6.1.7\spring-aspects-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-oauth2-client\3.3.0-SNAPSHOT\spring-boot-starter-oauth2-client-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter\3.3.0-SNAPSHOT\spring-boot-starter-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot\3.3.0-SNAPSHOT\spring-boot-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.3.0-SNAPSHOT\spring-boot-autoconfigure-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.3.0-SNAPSHOT\spring-boot-starter-logging-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\ch\qos\logback\logback-classic\1.5.6\logback-classic-1.5.6.jar;C:\Users\sean\.m2\repository\ch\qos\logback\logback-core\1.5.6\logback-core-1.5.6.jar;C:\Users\sean\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.23.1\log4j-to-slf4j-2.23.1.jar;C:\Users\sean\.m2\repository\org\apache\logging\log4j\log4j-api\2.23.1\log4j-api-2.23.1.jar;C:\Users\sean\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\sean\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-config\6.3.0-SNAPSHOT\spring-security-config-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-core\6.3.0-SNAPSHOT\spring-security-core-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-crypto\6.3.0-SNAPSHOT\spring-security-crypto-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\spring-expression\6.1.7\spring-expression-6.1.7.jar;C:\Users\sean\.m2\repository\io\micrometer\micrometer-observation\1.13.0\micrometer-observation-1.13.0.jar;C:\Users\sean\.m2\repository\io\micrometer\micrometer-commons\1.13.0\micrometer-commons-1.13.0.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-oauth2-client\6.3.0-SNAPSHOT\spring-security-oauth2-client-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-oauth2-core\6.3.0-SNAPSHOT\spring-security-oauth2-core-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\nimbusds\oauth2-oidc-sdk\9.43.4\oauth2-oidc-sdk-9.43.4.jar;C:\Users\sean\.m2\repository\com\github\stephenc\jcip\jcip-annotations\1.0-1\jcip-annotations-1.0-1.jar;C:\Users\sean\.m2\repository\com\nimbusds\content-type\2.2\content-type-2.2.jar;C:\Users\sean\.m2\repository\com\nimbusds\lang-tag\1.7\lang-tag-1.7.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-oauth2-jose\6.3.0-SNAPSHOT\spring-security-oauth2-jose-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\nimbusds\nimbus-jose-jwt\9.37.3\nimbus-jose-jwt-9.37.3.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-security\3.3.0-SNAPSHOT\spring-boot-starter-security-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\spring-aop\6.1.7\spring-aop-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-web\6.3.0-SNAPSHOT\spring-security-web-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-thymeleaf\3.3.0-SNAPSHOT\spring-boot-starter-thymeleaf-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\thymeleaf\thymeleaf-spring6\3.1.2.RELEASE\thymeleaf-spring6-3.1.2.RELEASE.jar;C:\Users\sean\.m2\repository\org\thymeleaf\thymeleaf\3.1.2.RELEASE\thymeleaf-3.1.2.RELEASE.jar;C:\Users\sean\.m2\repository\org\attoparser\attoparser\2.0.7.RELEASE\attoparser-2.0.7.RELEASE.jar;C:\Users\sean\.m2\repository\org\unbescape\unbescape\1.1.6.RELEASE\unbescape-1.1.6.RELEASE.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.3.0-SNAPSHOT\spring-boot-starter-web-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.3.0-SNAPSHOT\spring-boot-starter-json-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.17.1\jackson-databind-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.17.1\jackson-annotations-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.17.1\jackson-core-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.17.1\jackson-datatype-jdk8-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.17.1\jackson-datatype-jsr310-2.17.1.jar;C:\Users\sean\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.17.1\jackson-module-parameter-names-2.17.1.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.3.0-SNAPSHOT\spring-boot-starter-tomcat-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.24\tomcat-embed-core-10.1.24.jar;C:\Users\sean\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.24\tomcat-embed-el-10.1.24.jar;C:\Users\sean\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.24\tomcat-embed-websocket-10.1.24.jar;C:\Users\sean\.m2\repository\org\springframework\spring-web\6.1.7\spring-web-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-webmvc\6.1.7\spring-webmvc-6.1.7.jar;C:\Users\sean\.m2\repository\org\thymeleaf\extras\thymeleaf-extras-springsecurity6\3.1.2.RELEASE\thymeleaf-extras-springsecurity6-3.1.2.RELEASE.jar;C:\Users\sean\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.3.0-SNAPSHOT\spring-boot-starter-test-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-test\3.3.0-SNAPSHOT\spring-boot-test-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.3.0-SNAPSHOT\spring-boot-test-autoconfigure-3.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\sean\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\sean\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\sean\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\sean\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\sean\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\sean\.m2\repository\org\assertj\assertj-core\3.25.3\assertj-core-3.25.3.jar;C:\Users\sean\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\sean\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\sean\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\sean\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\sean\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\sean\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\sean\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\sean\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\sean\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\sean\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\sean\.m2\repository\org\mockito\mockito-junit-jupiter\5.11.0\mockito-junit-jupiter-5.11.0.jar;C:\Users\sean\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\sean\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\sean\.m2\repository\org\springframework\spring-core\6.1.7\spring-core-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-jcl\6.1.7\spring-jcl-6.1.7.jar;C:\Users\sean\.m2\repository\org\springframework\spring-test\6.1.7\spring-test-6.1.7.jar;C:\Users\sean\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\sean\.m2\repository\org\springframework\security\spring-security-test\6.3.0-SNAPSHOT\spring-security-test-6.3.0-SNAPSHOT.jar;C:\Users\sean\.m2\repository\org\projectlombok\lombok\1.18.32\lombok-1.18.32.jar;C:\Users\sean\.m2\repository\org\mockito\mockito-core\5.11.0\mockito-core-5.11.0.jar;C:\Users\sean\.m2\repository\net\bytebuddy\byte-buddy\1.14.15\byte-buddy-1.14.15.jar;C:\Users\sean\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.15\byte-buddy-agent-1.14.15.jar;C:\Users\sean\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\sean\.m2\repository\com\oracle\database\jdbc\ojdbc8\19.8.0.0\ojdbc8-19.8.0.0.jar;C:\Users\sean\.m2\repository\org\hibernate\orm\hibernate-core\6.2.0.Final\hibernate-core-6.2.0.Final.jar;C:\Users\sean\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\sean\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\sean\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\sean\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\sean\.m2\repository\io\smallrye\jandex\3.0.5\jandex-3.0.5.jar;C:\Users\sean\.m2\repository\com\fasterxml\classmate\1.7.0\classmate-1.7.0.jar;C:\Users\sean\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\sean\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\sean\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\sean\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\sean\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\sean\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\sean\.m2\repository\org\antlr\antlr4-runtime\4.10.1\antlr4-runtime-4.10.1.jar;C:\Users\sean\.m2\repository\jakarta\servlet\jakarta.servlet-api\5.0.0\jakarta.servlet-api-5.0.0.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\sean"/>
+    <property name="user.language" value="pt"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\sean\Desktop\digitalSprint4"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="windows-1252"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\sean\AppData\Local\Temp\surefire1027850057847892019\surefirebooter-20240520195752272_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.7+8-LTS-224"/>
+    <property name="user.name" value="sean"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\sean\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\sean\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.7"/>
+    <property name="user.dir" value="C:\Users\sean\Desktop\digitalSprint4"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="13460"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="windows-1252"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python312\Scripts\;C:\Python312\;C:\Python311\Scripts\;C:\Python311\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Users\sean\Desktop\PHP;C:\Program Files\dotnet\;C:\Program Files (x86)\dotnet\;C:\Program Files\jdk-14\bin;C:\ProgramData\chocolatey\bin;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;a\bin;C:\Users\sean\AppData\Local\Microsoft\WindowsApps;C:\Users\sean\.dotnet\tools;C:\Users\sean\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\apache-maven-3.9.1\bin;C:\Users\sean\AppData\Roaming\npm;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.7+8-LTS-224"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[digitalSprint4] "/>
+  </properties>
+  <testcase name="adicionarCotacao" classname="com.example.digitalSprint4.controller.CotacaoControllerTest" time="0.133">
+    <failure message="Range for response status value 403 expected:&lt;REDIRECTION&gt; but was:&lt;CLIENT_ERROR&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Range for response status value 403 expected:<REDIRECTION> but was:<CLIENT_ERROR>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$is3xxRedirection$4(StatusResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.digitalSprint4.controller.CotacaoControllerTest.adicionarCotacao(CotacaoControllerTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[19:57:53.078 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.example.digitalSprint4.controller.CotacaoControllerTest]: CotacaoControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+19:57:53.218 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.example.digitalSprint4.DigitalSprint4Application for test class com.example.digitalSprint4.controller.CotacaoControllerTest
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::       (v3.3.0-SNAPSHOT)
+
+2024-05-20T19:57:53.598-03:00  INFO 13460 --- [digitalSprint4] [           main] c.e.d.controller.CotacaoControllerTest   : Starting CotacaoControllerTest using Java 17.0.7 with PID 13460 (started by sean in C:\Users\sean\Desktop\digitalSprint4)
+2024-05-20T19:57:53.599-03:00 DEBUG 13460 --- [digitalSprint4] [           main] c.e.d.controller.CotacaoControllerTest   : Running with Spring Boot v3.3.0-SNAPSHOT, Spring v6.1.7
+2024-05-20T19:57:53.599-03:00  INFO 13460 --- [digitalSprint4] [           main] c.e.d.controller.CotacaoControllerTest   : No active profile set, falling back to 1 default profile: "default"
+2024-05-20T19:57:53.600-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.boot.SpringApplication               : Loading source class com.example.digitalSprint4.DigitalSprint4Application
+2024-05-20T19:57:53.615-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447
+2024-05-20T19:57:53.636-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalConfigurationAnnotationProcessor'
+2024-05-20T19:57:53.651-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory'
+2024-05-20T19:57:53.700-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Users\sean\Desktop\digitalSprint4\target\classes\com\example\digitalSprint4\config\WebConfig.class]
+2024-05-20T19:57:53.701-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.c.a.ClassPathBeanDefinitionScanner   : Identified candidate component class: file [C:\Users\sean\Desktop\digitalSprint4\target\classes\com\example\digitalSprint4\controller\CotacaoController.class]
+2024-05-20T19:57:54.078-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.test.context.ImportsContextCustomizer$ImportsCleanupPostProcessor'
+2024-05-20T19:57:54.086-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'springSecurityHandlerMappingIntrospectorBeanDefinitionRegistryPostProcessor'
+2024-05-20T19:57:54.087-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authorizedClientManagerRegistrar'
+2024-05-20T19:57:54.087-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2AuthorizedClientManagerConfiguration'
+2024-05-20T19:57:54.167-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor'
+2024-05-20T19:57:54.951-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerProcessor'
+2024-05-20T19:57:54.954-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'preserveErrorControllerTargetClassPostProcessor'
+2024-05-20T19:57:54.955-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'conversionServicePostProcessor'
+2024-05-20T19:57:54.966-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.event.internalEventListenerFactory'
+2024-05-20T19:57:54.973-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalAutowiredAnnotationProcessor'
+2024-05-20T19:57:54.976-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalCommonAnnotationProcessor'
+2024-05-20T19:57:54.986-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.context.annotation.internalPersistenceAnnotationProcessor'
+2024-05-20T19:57:54.987-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor'
+2024-05-20T19:57:54.988-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor'
+2024-05-20T19:57:54.988-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.internalConfigurationPropertiesBinder'
+2024-05-20T19:57:54.999-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'projectingArgumentResolverBeanPostProcessor'
+2024-05-20T19:57:55.055-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.u.c.s.UiApplicationContextUtils      : Unable to locate ThemeSource with name 'themeSource': using default [org.springframework.ui.context.support.ResourceBundleThemeSource@47a4eee2]
+2024-05-20T19:57:55.057-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'digitalSprint4Application'
+2024-05-20T19:57:55.061-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webConfig'
+2024-05-20T19:57:55.063-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'cotacaoController'
+2024-05-20T19:57:55.075-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.AutoConfigurationPackages'
+2024-05-20T19:57:55.076-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration'
+2024-05-20T19:57:55.077-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'threadPoolTaskExecutorBuilder'
+2024-05-20T19:57:55.078-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2024-05-20T19:57:55.081-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.BoundConfigurationProperties'
+2024-05-20T19:57:55.098-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'threadPoolTaskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2024-05-20T19:57:55.105-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorBuilderConfiguration'
+2024-05-20T19:57:55.105-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'taskExecutorBuilder'
+2024-05-20T19:57:55.106-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'taskExecutorBuilder' via factory method to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2024-05-20T19:57:55.109-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration'
+2024-05-20T19:57:55.111-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration' via constructor to bean named 'spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties'
+2024-05-20T19:57:55.112-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'simpleAsyncTaskExecutorBuilder'
+2024-05-20T19:57:55.114-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration'
+2024-05-20T19:57:55.115-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration'
+2024-05-20T19:57:55.116-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter'
+2024-05-20T19:57:55.121-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration'
+2024-05-20T19:57:55.124-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2024-05-20T19:57:55.131-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.131-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2024-05-20T19:57:55.132-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2024-05-20T19:57:55.142-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration'
+2024-05-20T19:57:55.143-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2024-05-20T19:57:55.170-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2024-05-20T19:57:55.170-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorAttributes'
+2024-05-20T19:57:55.174-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'basicErrorController'
+2024-05-20T19:57:55.175-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'basicErrorController' via factory method to bean named 'errorAttributes'
+2024-05-20T19:57:55.182-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'errorPageCustomizer'
+2024-05-20T19:57:55.182-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dispatcherServletPath'
+2024-05-20T19:57:55.183-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration'
+2024-05-20T19:57:55.183-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration' via constructor to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.183-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.test.autoconfigure.web.servlet.MockMvcAutoConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2024-05-20T19:57:55.185-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'errorPageCustomizer' via factory method to bean named 'dispatcherServletPath'
+2024-05-20T19:57:55.187-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration'
+2024-05-20T19:57:55.188-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2024-05-20T19:57:55.188-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2024-05-20T19:57:55.188-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@5395ea39'
+2024-05-20T19:57:55.195-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter'
+2024-05-20T19:57:55.197-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.web-org.springframework.boot.autoconfigure.web.WebProperties'
+2024-05-20T19:57:55.197-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties'
+2024-05-20T19:57:55.197-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter' via constructor to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@5395ea39'
+2024-05-20T19:57:55.198-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataWebConfiguration'
+2024-05-20T19:57:55.200-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.data.web.config.SpringDataWebConfiguration' via constructor to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.203-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration'
+2024-05-20T19:57:55.206-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration$OAuth2ClientWebMvcSecurityConfiguration'
+2024-05-20T19:57:55.210-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'OAuth2AuthorizedClientManager'
+2024-05-20T19:57:55.210-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'clientRegistrationRepository'
+2024-05-20T19:57:55.211-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientRegistrationRepositoryConfiguration'
+2024-05-20T19:57:55.212-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties'
+2024-05-20T19:57:55.230-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'clientRegistrationRepository' via factory method to bean named 'spring.security.oauth2.client-org.springframework.boot.autoconfigure.security.oauth2.client.OAuth2ClientProperties'
+2024-05-20T19:57:55.254-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authorizedClientRepository'
+2024-05-20T19:57:55.255-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2WebSecurityConfiguration'
+2024-05-20T19:57:55.256-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authorizedClientService'
+2024-05-20T19:57:55.256-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authorizedClientService' via factory method to bean named 'clientRegistrationRepository'
+2024-05-20T19:57:55.258-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authorizedClientRepository' via factory method to bean named 'authorizedClientService'
+2024-05-20T19:57:55.322-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'welcomePageHandlerMapping'
+2024-05-20T19:57:55.323-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcConversionService'
+2024-05-20T19:57:55.336-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcResourceUrlProvider'
+2024-05-20T19:57:55.339-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.339-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.339-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2024-05-20T19:57:55.365-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'welcomePageNotAcceptableHandlerMapping'
+2024-05-20T19:57:55.365-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.365-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.365-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'welcomePageNotAcceptableHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2024-05-20T19:57:55.370-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'localeResolver'
+2024-05-20T19:57:55.372-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'themeResolver'
+2024-05-20T19:57:55.373-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'flashMapManager'
+2024-05-20T19:57:55.376-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcValidator'
+2024-05-20T19:57:55.378-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcContentNegotiationManager'
+2024-05-20T19:57:55.384-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestMappingHandlerMapping'
+2024-05-20T19:57:55.385-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2024-05-20T19:57:55.385-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.385-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2024-05-20T19:57:55.438-03:00 DEBUG 13460 --- [digitalSprint4] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 5 mappings in 'requestMappingHandlerMapping'
+2024-05-20T19:57:55.438-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcPatternParser'
+2024-05-20T19:57:55.439-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcUrlPathHelper'
+2024-05-20T19:57:55.440-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcPathMatcher'
+2024-05-20T19:57:55.441-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'viewControllerHandlerMapping'
+2024-05-20T19:57:55.442-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.442-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'viewControllerHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2024-05-20T19:57:55.443-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'beanNameHandlerMapping'
+2024-05-20T19:57:55.444-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.444-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'beanNameHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2024-05-20T19:57:55.452-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'routerFunctionMapping'
+2024-05-20T19:57:55.453-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.453-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'routerFunctionMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2024-05-20T19:57:55.455-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'messageConverters'
+2024-05-20T19:57:55.455-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration'
+2024-05-20T19:57:55.459-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'stringHttpMessageConverter'
+2024-05-20T19:57:55.459-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration'
+2024-05-20T19:57:55.460-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'stringHttpMessageConverter' via factory method to bean named 'environment'
+2024-05-20T19:57:55.465-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mappingJackson2HttpMessageConverter'
+2024-05-20T19:57:55.465-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration'
+2024-05-20T19:57:55.466-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonObjectMapper'
+2024-05-20T19:57:55.466-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration'
+2024-05-20T19:57:55.467-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration'
+2024-05-20T19:57:55.467-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'standardJacksonObjectMapperBuilderCustomizer'
+2024-05-20T19:57:55.468-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration'
+2024-05-20T19:57:55.469-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2024-05-20T19:57:55.473-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'standardJacksonObjectMapperBuilderCustomizer' via factory method to bean named 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties'
+2024-05-20T19:57:55.474-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'parameterNamesModule'
+2024-05-20T19:57:55.474-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration'
+2024-05-20T19:57:55.477-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jsonMixinModule'
+2024-05-20T19:57:55.478-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration'
+2024-05-20T19:57:55.478-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jsonMixinModuleEntries'
+2024-05-20T19:57:55.478-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jsonMixinModuleEntries' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.479-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.example.digitalSprint4'. Automatic @Repository and @Entity scanning is enabled.
+2024-05-20T19:57:55.485-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.486-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jsonMixinModule' via factory method to bean named 'jsonMixinModuleEntries'
+2024-05-20T19:57:55.487-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jsonComponentModule'
+2024-05-20T19:57:55.487-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration'
+2024-05-20T19:57:55.490-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'jacksonGeoModule'
+2024-05-20T19:57:55.491-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration'
+2024-05-20T19:57:55.492-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.data.web.config.SpringDataWebSettings'
+2024-05-20T19:57:55.498-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'pageModule'
+2024-05-20T19:57:55.503-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.503-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonObjectMapperBuilder' via factory method to bean named 'standardJacksonObjectMapperBuilderCustomizer'
+2024-05-20T19:57:55.506-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'jacksonObjectMapper' via factory method to bean named 'jacksonObjectMapperBuilder'
+2024-05-20T19:57:55.517-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mappingJackson2HttpMessageConverter' via factory method to bean named 'jacksonObjectMapper'
+2024-05-20T19:57:55.566-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'resourceHandlerMapping'
+2024-05-20T19:57:55.567-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcContentNegotiationManager'
+2024-05-20T19:57:55.567-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.567-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'resourceHandlerMapping' via factory method to bean named 'mvcResourceUrlProvider'
+2024-05-20T19:57:55.581-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2024-05-20T19:57:55.581-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultServletHandlerMapping'
+2024-05-20T19:57:55.582-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestMappingHandlerAdapter'
+2024-05-20T19:57:55.583-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcContentNegotiationManager'
+2024-05-20T19:57:55.583-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.583-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'requestMappingHandlerAdapter' via factory method to bean named 'mvcValidator'
+2024-05-20T19:57:55.592-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'sortResolver'
+2024-05-20T19:57:55.594-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'sortCustomizer'
+2024-05-20T19:57:55.594-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration'
+2024-05-20T19:57:55.595-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties'
+2024-05-20T19:57:55.596-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration' via constructor to bean named 'spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties'
+2024-05-20T19:57:55.600-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'pageableResolver'
+2024-05-20T19:57:55.602-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'pageableCustomizer'
+2024-05-20T19:57:55.609-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'applicationTaskExecutor'
+2024-05-20T19:57:55.616-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'applicationTaskExecutor' via factory method to bean named 'taskExecutorBuilder'
+2024-05-20T19:57:55.623-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2024-05-20T19:57:55.638-03:00 DEBUG 13460 --- [digitalSprint4] [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-20T19:57:55.670-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'handlerFunctionAdapter'
+2024-05-20T19:57:55.673-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcUriComponentsContributor'
+2024-05-20T19:57:55.674-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'mvcConversionService'
+2024-05-20T19:57:55.675-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mvcUriComponentsContributor' via factory method to bean named 'requestMappingHandlerAdapter'
+2024-05-20T19:57:55.677-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'httpRequestHandlerAdapter'
+2024-05-20T19:57:55.677-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'simpleControllerHandlerAdapter'
+2024-05-20T19:57:55.678-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'handlerExceptionResolver'
+2024-05-20T19:57:55.678-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'handlerExceptionResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2024-05-20T19:57:55.681-03:00 DEBUG 13460 --- [digitalSprint4] [           main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-20T19:57:55.686-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcViewResolver'
+2024-05-20T19:57:55.686-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mvcViewResolver' via factory method to bean named 'mvcContentNegotiationManager'
+2024-05-20T19:57:55.689-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'viewNameTranslator'
+2024-05-20T19:57:55.690-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultViewResolver'
+2024-05-20T19:57:55.696-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'viewResolver'
+2024-05-20T19:57:55.696-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'viewResolver' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@5395ea39'
+2024-05-20T19:57:55.697-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'viewResolver'
+2024-05-20T19:57:55.698-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'thymeleafViewResolver'
+2024-05-20T19:57:55.698-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafWebMvcConfiguration$ThymeleafViewResolverConfiguration'
+2024-05-20T19:57:55.699-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.thymeleaf-org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties'
+2024-05-20T19:57:55.702-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'templateEngine'
+2024-05-20T19:57:55.702-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.thymeleaf.TemplateEngineConfigurations$DefaultTemplateEngineConfiguration'
+2024-05-20T19:57:55.703-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'templateEngine' via factory method to bean named 'spring.thymeleaf-org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties'
+2024-05-20T19:57:55.716-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'defaultTemplateResolver'
+2024-05-20T19:57:55.717-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration'
+2024-05-20T19:57:55.717-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration' via constructor to bean named 'spring.thymeleaf-org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties'
+2024-05-20T19:57:55.717-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$DefaultTemplateResolverConfiguration' via constructor to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.721-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securityDialect'
+2024-05-20T19:57:55.721-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafSecurityDialectConfiguration'
+2024-05-20T19:57:55.725-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'thymeleafViewResolver' via factory method to bean named 'spring.thymeleaf-org.springframework.boot.autoconfigure.thymeleaf.ThymeleafProperties'
+2024-05-20T19:57:55.726-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'thymeleafViewResolver' via factory method to bean named 'templateEngine'
+2024-05-20T19:57:55.728-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestContextFilter'
+2024-05-20T19:57:55.731-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration'
+2024-05-20T19:57:55.732-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'formContentFilter'
+2024-05-20T19:57:55.734-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration'
+2024-05-20T19:57:55.734-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.data.web.config.ProjectingArgumentResolverRegistrar'
+2024-05-20T19:57:55.734-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'offsetResolver'
+2024-05-20T19:57:55.736-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2WebSecurityConfiguration$OAuth2SecurityFilterChainConfiguration'
+2024-05-20T19:57:55.737-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'oauth2SecurityFilterChain'
+2024-05-20T19:57:55.737-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration'
+2024-05-20T19:57:55.739-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'objectPostProcessor'
+2024-05-20T19:57:55.739-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration'
+2024-05-20T19:57:55.740-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'objectPostProcessor' via factory method to bean named 'org.springframework.beans.factory.support.DefaultListableBeanFactory@5395ea39'
+2024-05-20T19:57:55.742-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration'
+2024-05-20T19:57:55.744-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'enableGlobalAuthenticationAutowiredConfigurer'
+2024-05-20T19:57:55.744-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'enableGlobalAuthenticationAutowiredConfigurer' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.745-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'initializeUserDetailsBeanManagerConfigurer'
+2024-05-20T19:57:55.745-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'initializeUserDetailsBeanManagerConfigurer' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.746-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'initializeAuthenticationProviderBeanManagerConfigurer'
+2024-05-20T19:57:55.746-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'initializeAuthenticationProviderBeanManagerConfigurer' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.751-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authenticationManagerBuilder'
+2024-05-20T19:57:55.752-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'objectPostProcessor'
+2024-05-20T19:57:55.752-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authenticationManagerBuilder' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.753-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'authenticationEventPublisher'
+2024-05-20T19:57:55.753-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration'
+2024-05-20T19:57:55.753-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'authenticationEventPublisher' via factory method to bean named 'org.springframework.web.context.support.GenericWebApplicationContext@5ab9b447'
+2024-05-20T19:57:55.761-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration$WebSecurityEnablerConfiguration'
+2024-05-20T19:57:55.763-03:00 DEBUG 13460 --- [digitalSprint4] [           main] swordEncoderAuthenticationManagerBuilder : No authenticationProviders and no parentAuthenticationManager defined. Returning null.
+2024-05-20T19:57:55.813-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'oauth2SecurityFilterChain' via factory method to bean named 'org.springframework.security.config.annotation.web.configuration.HttpSecurityConfiguration.httpSecurity'
+2024-05-20T19:57:55.884-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcHandlerMappingIntrospector'
+2024-05-20T19:57:55.904-03:00  INFO 13460 --- [digitalSprint4] [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@47be41c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@608b35fa, org.springframework.security.web.context.SecurityContextHolderFilter@7c421952, org.springframework.security.web.header.HeaderWriterFilter@7bf65e0f, org.springframework.web.filter.CorsFilter@13a268cd, org.springframework.security.web.csrf.CsrfFilter@995ad50, org.springframework.security.web.authentication.logout.LogoutFilter@13234ac9, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@1f0e2bdc, org.springframework.security.oauth2.client.web.OAuth2AuthorizationRequestRedirectFilter@17354708, org.springframework.security.oauth2.client.web.OAuth2LoginAuthenticationFilter@26463a6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6cd2cb2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7b3a6e95, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c6a692e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4b343b6d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4ebfb045, org.springframework.security.oauth2.client.web.OAuth2AuthorizationCodeGrantFilter@3d235635, org.springframework.security.web.access.ExceptionTranslationFilter@3f0c6b3c, org.springframework.security.web.access.intercept.AuthorizationFilter@3f322610]
+2024-05-20T19:57:55.905-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.oauth2.client.servlet.OAuth2ClientAutoConfiguration'
+2024-05-20T19:57:55.905-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration'
+2024-05-20T19:57:55.912-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mvcHandlerMappingIntrospectorRequestTransformer'
+2024-05-20T19:57:55.915-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'delegatingApplicationListener'
+2024-05-20T19:57:55.915-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'springSecurityFilterChain'
+2024-05-20T19:57:55.925-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'webSecurityExpressionHandler'
+2024-05-20T19:57:55.926-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'privilegeEvaluator'
+2024-05-20T19:57:55.927-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'requestDataValueProcessor'
+2024-05-20T19:57:55.928-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.security.config.annotation.web.configuration.OAuth2ClientConfiguration'
+2024-05-20T19:57:55.928-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration'
+2024-05-20T19:57:55.929-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2024-05-20T19:57:55.930-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.security.servlet.SecurityFilterAutoConfiguration'
+2024-05-20T19:57:55.931-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securityFilterChainRegistration'
+2024-05-20T19:57:55.931-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'securityFilterChainRegistration' via factory method to bean named 'spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties'
+2024-05-20T19:57:55.935-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration$ThymeleafWebMvcConfiguration'
+2024-05-20T19:57:55.937-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.thymeleaf.ThymeleafAutoConfiguration'
+2024-05-20T19:57:55.938-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration'
+2024-05-20T19:57:55.938-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration' via constructor to bean named 'server-org.springframework.boot.autoconfigure.web.ServerProperties'
+2024-05-20T19:57:55.939-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'characterEncodingFilter'
+2024-05-20T19:57:55.939-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'localeCharsetMappingsCustomizer'
+2024-05-20T19:57:55.941-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mockMvcBuilder'
+2024-05-20T19:57:55.942-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'springBootMockMvcBuilderCustomizer'
+2024-05-20T19:57:55.945-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'securityMockMvcBuilderCustomizer'
+2024-05-20T19:57:55.945-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'org.springframework.boot.test.autoconfigure.web.servlet.MockMvcSecurityConfiguration'
+2024-05-20T19:57:55.947-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mockMvcBuilder' via factory method to bean named 'springBootMockMvcBuilderCustomizer'
+2024-05-20T19:57:55.947-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mockMvcBuilder' via factory method to bean named 'securityMockMvcBuilderCustomizer'
+2024-05-20T19:57:55.953-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping filters: springSecurityFilterChain urls=[/*] order=-100, characterEncodingFilter urls=[/*] order=-2147483648, formContentFilter urls=[/*] order=-9900, requestContextFilter urls=[/*] order=-105
+2024-05-20T19:57:55.954-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.w.s.ServletContextInitializerBeans : Mapping servlets: 
+2024-05-20T19:57:55.960-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'mockMvc'
+2024-05-20T19:57:55.961-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'mockMvc' via factory method to bean named 'mockMvcBuilder'
+2024-05-20T19:57:55.977-03:00 DEBUG 13460 --- [digitalSprint4] [           main] s.b.w.s.f.OrderedCharacterEncodingFilter : Filter 'characterEncodingFilter' configured for use
+2024-05-20T19:57:55.977-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.w.s.f.OrderedFormContentFilter     : Filter 'formContentFilter' configured for use
+2024-05-20T19:57:55.977-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.w.s.f.OrderedRequestContextFilter  : Filter 'requestContextFilter' configured for use
+2024-05-20T19:57:55.977-03:00 DEBUG 13460 --- [digitalSprint4] [           main] .DelegatingFilterProxyRegistrationBean$1 : Filter 'springSecurityFilterChain' configured for use
+2024-05-20T19:57:55.987-03:00  INFO 13460 --- [digitalSprint4] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-05-20T19:57:55.987-03:00  INFO 13460 --- [digitalSprint4] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-05-20T19:57:55.988-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Detected AcceptHeaderLocaleResolver
+2024-05-20T19:57:55.989-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Detected FixedThemeResolver
+2024-05-20T19:57:55.990-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@bb6f3f7
+2024-05-20T19:57:55.990-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Detected org.springframework.web.servlet.support.SessionFlashMapManager@7f22687e
+2024-05-20T19:57:55.990-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.t.web.servlet.TestDispatcherServlet  : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-20T19:57:55.990-03:00  INFO 13460 --- [digitalSprint4] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2024-05-20T19:57:55.994-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Creating shared instance of singleton bean 'dispatcherServlet'
+2024-05-20T19:57:55.995-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.b.f.s.DefaultListableBeanFactory     : Autowiring by type from bean name 'dispatcherServlet' via factory method to bean named 'mockMvc'
+2024-05-20T19:57:56.013-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147483647
+2024-05-20T19:57:56.013-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.c.support.DefaultLifecycleProcessor  : Successfully started bean 'springBootLoggingLifecycle'
+2024-05-20T19:57:56.013-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2024-05-20T19:57:56.020-03:00 DEBUG 13460 --- [digitalSprint4] [           main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   ErrorMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   ErrorMvcAutoConfiguration#basicErrorController matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorController; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.servlet.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   HttpEncodingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.filter.CharacterEncodingFilter' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (server.servlet.encoding.enabled) matched (OnPropertyCondition)
+
+   HttpEncodingAutoConfiguration#characterEncodingFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.CharacterEncodingFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+      - NoneNestedConditions 0 matched 1 did not; NestedCondition on HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication did not find reactive web application classes (HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition)
+
+   HttpMessageConvertersAutoConfiguration#messageConverters matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.http.HttpMessageConverters; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.StringHttpMessageConverter' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration.StringHttpMessageConverterConfiguration#stringHttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.StringHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.Jackson2ObjectMapperBuilderCustomizerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperBuilderConfiguration#jacksonObjectMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.Jackson2ObjectMapperBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.json.Jackson2ObjectMapperBuilder' (OnClassCondition)
+
+   JacksonAutoConfiguration.JacksonObjectMapperConfiguration#jacksonObjectMapper matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.module.paramnames.ParameterNamesModule' (OnClassCondition)
+
+   JacksonAutoConfiguration.ParameterNamesModuleConfiguration#parameterNamesModule matched:
+      - @ConditionalOnMissingBean (types: com.fasterxml.jackson.module.paramnames.ParameterNamesModule; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration matched:
+      - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.mvc.converters.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+      - @ConditionalOnBean (types: com.fasterxml.jackson.databind.ObjectMapper; SearchStrategy: all) found bean 'jacksonObjectMapper' (OnBeanCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2HttpMessageConverterConfiguration#mappingJackson2HttpMessageConverter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.converter.json.MappingJackson2HttpMessageConverter ignored: org.springframework.hateoas.server.mvc.TypeConstrainedMappingJackson2HttpMessageConverter,org.springframework.data.rest.webmvc.alps.AlpsJsonHttpMessageConverter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MockMvcAutoConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   MockMvcAutoConfiguration#dispatcherServlet matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MockMvcAutoConfiguration#dispatcherServletPath matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.autoconfigure.web.servlet.DispatcherServletPath; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MockMvcAutoConfiguration#mockMvc matched:
+      - @ConditionalOnMissingBean (types: org.springframework.test.web.servlet.MockMvc; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MockMvcAutoConfiguration#mockMvcBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.test.web.servlet.MockMvcBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   MockMvcSecurityConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.test.web.servlet.request.SecurityMockMvcRequestPostProcessors' (OnClassCondition)
+
+   MockMvcSecurityConfiguration#securityMockMvcBuilderCustomizer matched:
+      - @ConditionalOnBean (names: springSecurityFilterChain; SearchStrategy: all) found bean 'springSecurityFilterChain' (OnBeanCondition)
+
+   NoOpCacheConfiguration matched:
+      - Cache org.springframework.boot.autoconfigure.cache.NoOpCacheConfiguration NONE cache type (CacheCondition)
+
+   OAuth2ClientAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity', 'org.springframework.security.oauth2.client.registration.ClientRegistration' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   OAuth2ClientRegistrationRepositoryConfiguration matched:
+      - OAuth2 Clients Configured Condition found registered clients 376566005807-esj94t96q0nde8roqi4b0qj1la68fmfg.apps.googleusercontent.com (ClientsConfiguredCondition)
+
+   OAuth2ClientRegistrationRepositoryConfiguration#clientRegistrationRepository matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.oauth2.client.registration.ClientRegistrationRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OAuth2WebSecurityConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.security.oauth2.client.registration.ClientRegistrationRepository; SearchStrategy: all) found bean 'clientRegistrationRepository' (OnBeanCondition)
+
+   OAuth2WebSecurityConfiguration#authorizedClientRepository matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.oauth2.client.web.OAuth2AuthorizedClientRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OAuth2WebSecurityConfiguration#authorizedClientService matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.oauth2.client.OAuth2AuthorizedClientService; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OAuth2WebSecurityConfiguration.OAuth2SecurityFilterChainConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) did not find any beans; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   SecurityAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.authentication.DefaultAuthenticationEventPublisher' (OnClassCondition)
+
+   SecurityAutoConfiguration#authenticationEventPublisher matched:
+      - @ConditionalOnMissingBean (types: org.springframework.security.authentication.AuthenticationEventPublisher; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SecurityFilterAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.security.web.context.AbstractSecurityWebApplicationInitializer', 'org.springframework.security.config.http.SessionCreationPolicy' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+
+   SecurityFilterAutoConfiguration#securityFilterChainRegistration matched:
+      - @ConditionalOnBean (names: springSecurityFilterChain; SearchStrategy: all) found bean 'springSecurityFilterChain' (OnBeanCondition)
+
+   SpringBootWebSecurityConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+
+   SpringBootWebSecurityConfiguration.WebSecurityEnablerConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.security.config.annotation.web.configuration.EnableWebSecurity' (OnClassCondition)
+      - @ConditionalOnMissingBean (names: springSecurityFilterChain; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.data.web.PageableHandlerMethodArgumentResolver', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.PageableHandlerMethodArgumentResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#pageableCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.PageableHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringDataWebAutoConfiguration#sortCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.data.web.config.SortHandlerMethodArgumentResolverCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorBuilderConfiguration#taskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.ThreadPoolTaskExecutorBuilderConfiguration#threadPoolTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.TaskExecutorBuilder,org.springframework.boot.task.ThreadPoolTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TemplateEngineConfigurations.DefaultTemplateEngineConfiguration#templateEngine matched:
+      - @ConditionalOnMissingBean (types: org.thymeleaf.spring6.ISpringTemplateEngine; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThymeleafAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.thymeleaf.templatemode.TemplateMode', 'org.thymeleaf.spring6.SpringTemplateEngine' (OnClassCondition)
+
+   ThymeleafAutoConfiguration.DefaultTemplateResolverConfiguration matched:
+      - @ConditionalOnMissingBean (names: defaultTemplateResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafSecurityDialectConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect', 'org.springframework.security.web.server.csrf.CsrfToken' (OnClassCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafSecurityDialectConfiguration#securityDialect matched:
+      - @ConditionalOnMissingBean (types: org.thymeleaf.extras.springsecurity6.dialect.SpringSecurityDialect; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration matched:
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnProperty (spring.thymeleaf.enabled) matched (OnPropertyCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration.ThymeleafViewResolverConfiguration#thymeleafViewResolver matched:
+      - @ConditionalOnMissingBean (names: thymeleafViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'jakarta.servlet.Servlet', 'org.springframework.web.servlet.DispatcherServlet', 'org.springframework.web.servlet.config.annotation.WebMvcConfigurer' (OnClassCondition)
+      - found 'session' scope (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration#formContentFilter matched:
+      - @ConditionalOnProperty (spring.mvc.formcontent.filter.enabled) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.filter.FormContentFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#flashMapManager matched:
+      - @ConditionalOnMissingBean (names: flashMapManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#localeResolver matched:
+      - @ConditionalOnMissingBean (names: localeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.EnableWebMvcConfiguration#themeResolver matched:
+      - @ConditionalOnMissingBean (names: themeResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#defaultViewResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.servlet.view.InternalResourceViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#requestContextFilter matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.context.request.RequestContextListener,org.springframework.web.filter.RequestContextFilter; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#viewResolver matched:
+      - @ConditionalOnBean (types: org.springframework.web.servlet.ViewResolver; SearchStrategy: all) found beans 'defaultViewResolver', 'mvcViewResolver'; @ConditionalOnMissingBean (names: viewResolver types: org.springframework.web.servlet.view.ContentNegotiatingViewResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   Cache2kCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.cache2k.Cache2kBuilder' (OnClassCondition)
+
+   CacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.cache.interceptor.CacheAspectSupport; SearchStrategy: all) did not find any beans of type org.springframework.cache.interceptor.CacheAspectSupport (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.cache.CacheManager' (OnClassCondition)
+
+   CacheAutoConfiguration.CacheManagerEntityManagerFactoryDependsOnPostProcessor:
+      Did not match:
+         - Ancestor org.springframework.boot.autoconfigure.cache.CacheAutoConfiguration did not match (ConditionEvaluationReport.AncestorsMatchedCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean' (OnClassCondition)
+
+   CaffeineCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.github.benmanes.caffeine.cache.Caffeine' (OnClassCondition)
+
+   CouchbaseCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.couchbase.client.java.Cluster' (OnClassCondition)
+
+   ErrorMvcAutoConfiguration.DefaultErrorViewResolverConfiguration#conventionErrorViewResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.servlet.DispatcherServlet; SearchStrategy: all) did not find any beans of type org.springframework.web.servlet.DispatcherServlet (OnBeanCondition)
+
+   ErrorMvcAutoConfiguration.WhitelabelErrorViewConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (server.error.whitelabel.enabled) found different value in property 'enabled' (OnPropertyCondition)
+
+   FreeMarkerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'freemarker.template.Configuration' (OnClassCondition)
+
+   GenericCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.GenericCacheConfiguration unknown cache type (CacheCondition)
+
+   GroovyTemplateAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'groovy.text.markup.MarkupTemplateEngine' (OnClassCondition)
+
+   GsonAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   GsonHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.google.gson.Gson' (OnClassCondition)
+
+   HazelcastCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.hazelcast.core.HazelcastInstance' (OnClassCondition)
+
+   HypermediaAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.hateoas.EntityModel' (OnClassCondition)
+
+   InfinispanCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.infinispan.spring.embedded.provider.SpringEmbeddedCacheManager' (OnClassCondition)
+
+   JCacheCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'javax.cache.Caching' (OnClassCondition)
+
+   JacksonHttpMessageConvertersConfiguration.MappingJackson2XmlHttpMessageConverterConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.fasterxml.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JsonbAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.json.bind.Jsonb' (OnClassCondition)
+
+   JsonbHttpMessageConvertersConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.json.bind.Jsonb' (OnClassCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   MockMvcAutoConfiguration.WebTestClientMockMvcConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   MockMvcWebClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.gargoylesoftware.htmlunit.WebClient' (OnClassCondition)
+
+   MockMvcWebDriverAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.openqa.selenium.htmlunit.HtmlUnitDriver' (OnClassCondition)
+
+   MustacheAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.samskivert.mustache.Mustache' (OnClassCondition)
+
+   OAuth2ResourceServerAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.oauth2.server.resource.authentication.BearerTokenAuthenticationToken' (OnClassCondition)
+
+   RedisCacheConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.data.redis.connection.RedisConnectionFactory' (OnClassCondition)
+
+   SecurityDataConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.security.data.repository.query.SecurityEvaluationContextExtension' (OnClassCondition)
+
+   SimpleCacheConfiguration:
+      Did not match:
+         - Cache org.springframework.boot.autoconfigure.cache.SimpleCacheConfiguration unknown cache type (CacheCondition)
+
+   SpringBootWebSecurityConfiguration.SecurityFilterChainConfiguration:
+      Did not match:
+         - AllNestedConditions 1 matched 1 did not; NestedCondition on DefaultWebSecurityCondition.Beans @ConditionalOnMissingBean (types: org.springframework.security.web.SecurityFilterChain; SearchStrategy: all) found beans of type 'org.springframework.security.web.SecurityFilterChain' oauth2SecurityFilterChain; NestedCondition on DefaultWebSecurityCondition.Classes @ConditionalOnClass found required classes 'org.springframework.security.web.SecurityFilterChain', 'org.springframework.security.config.annotation.web.builders.HttpSecurity' (DefaultWebSecurityCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder' simpleAsyncTaskExecutorBuilder (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   TemplateEngineConfigurations.ReactiveTemplateEngineConfiguration:
+      Did not match:
+         - did not find reactive web application classes (OnWebApplicationCondition)
+
+   ThymeleafAutoConfiguration.DataAttributeDialectConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'com.github.mxab.thymeleaf.extras.dataattribute.dialect.DataAttributeDialect' (OnClassCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafWebFluxConfiguration:
+      Did not match:
+         - did not find reactive web application classes (OnWebApplicationCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafWebLayoutConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'nz.net.ultraq.thymeleaf.layoutdialect.LayoutDialect' (OnClassCondition)
+
+   ThymeleafAutoConfiguration.ThymeleafWebMvcConfiguration#resourceUrlEncodingFilter:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarAssetLocator (OnEnabledResourceChainCondition)
+
+   UserDetailsServiceAutoConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 3 did not; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.PasswordConfigured @ConditionalOnProperty (spring.security.user.password) did not find property 'password'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.NameConfigured @ConditionalOnProperty (spring.security.user.name) did not find property 'name'; NestedCondition on UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured.MissingAlternative @ConditionalOnMissingClass found unwanted class 'org.springframework.security.oauth2.client.registration.ClientRegistrationRepository' (UserDetailsServiceAutoConfiguration.MissingAlternativeOrUserPropertiesConfigured)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.security.authentication.AuthenticationManager' (OnClassCondition)
+
+   ValidationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'jakarta.validation.executable.ExecutableValidator' (OnClassCondition)
+
+   WebMvcAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.hiddenmethod.filter.enabled) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ProblemDetailsErrorHandlingConfiguration:
+      Did not match:
+         - @ConditionalOnProperty (spring.mvc.problemdetails.enabled=true) did not find property 'enabled' (OnPropertyCondition)
+
+   WebMvcAutoConfiguration.ResourceChainCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarAssetLocator (OnEnabledResourceChainCondition)
+
+   WebMvcAutoConfiguration.WebMvcAutoConfigurationAdapter#beanNameViewResolver:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.servlet.View; SearchStrategy: all) did not find any beans of type org.springframework.web.servlet.View (OnBeanCondition)
+
+   WebTestClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    None
+
+
+
+2024-05-20T19:57:56.024-03:00  INFO 13460 --- [digitalSprint4] [           main] c.e.d.controller.CotacaoControllerTest   : Started CotacaoControllerTest in 2.727 seconds (process running for 3.628)
+2024-05-20T19:57:56.031-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 0, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.032-03:00 DEBUG 13460 --- [digitalSprint4] [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.digitalSprint4.controller.CotacaoControllerTest
+2024-05-20T19:57:56.033-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 1, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.036-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 2, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.046-03:00 DEBUG 13460 --- [digitalSprint4] [           main] sContextBeforeModesTestExecutionListener : Before test method: class [CotacaoControllerTest], method [adicionarCotacao], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2024-05-20T19:57:56.050-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 3, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.052-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 4, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.065-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 5, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.128-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.security.web.FilterChainProxy        : Securing POST /cotacoes
+2024-05-20T19:57:56.142-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.security.web.csrf.CsrfFilter         : Invalid CSRF token found for http://localhost/cotacoes
+2024-05-20T19:57:56.142-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.s.w.access.AccessDeniedHandlerImpl   : Responding with 403 status code
+2024-05-20T19:57:56.159-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 6, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.160-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 7, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.160-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 8, missCount = 1, failureCount = 0]
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /cotacoes
+       Parameters = {descricao=[Cotacao 1], valor=[100.0], dataCriacao=[2024-05-20]}
+          Headers = []
+             Body = null
+    Session Attrs = {org.springframework.security.web.csrf.HttpSessionCsrfTokenRepository.CSRF_TOKEN=org.springframework.security.web.csrf.DefaultCsrfToken@6dbbdf92}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 403
+    Error message = Forbidden
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+2024-05-20T19:57:56.160-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 9, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.161-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 10, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.162-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 11, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.163-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 12, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.163-03:00 DEBUG 13460 --- [digitalSprint4] [           main] .c.s.DirtiesContextTestExecutionListener : After test method: class [CotacaoControllerTest], method [adicionarCotacao], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+]]></system-out>
+  </testcase>
+  <testcase name="listarTodasCotacoes" classname="com.example.digitalSprint4.controller.CotacaoControllerTest" time="0.024">
+    <failure message="Status expected:&lt;200&gt; but was:&lt;302&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: Status expected:<200> but was:<302>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.digitalSprint4.controller.CotacaoControllerTest.listarTodasCotacoes(CotacaoControllerTest.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+]]></failure>
+    <system-out><![CDATA[2024-05-20T19:57:56.175-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 13, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.175-03:00 DEBUG 13460 --- [digitalSprint4] [           main] DependencyInjectionTestExecutionListener : Performing dependency injection for test class com.example.digitalSprint4.controller.CotacaoControllerTest
+2024-05-20T19:57:56.175-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 14, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.176-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 15, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.177-03:00 DEBUG 13460 --- [digitalSprint4] [           main] sContextBeforeModesTestExecutionListener : Before test method: class [CotacaoControllerTest], method [listarTodasCotacoes], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+2024-05-20T19:57:56.178-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 16, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.179-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 17, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.180-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 18, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.182-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.security.web.FilterChainProxy        : Securing GET /cotacoes
+2024-05-20T19:57:56.187-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2024-05-20T19:57:56.191-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost/cotacoes?continue to session
+2024-05-20T19:57:56.195-03:00 DEBUG 13460 --- [digitalSprint4] [           main] s.w.a.DelegatingAuthenticationEntryPoint : Trying to match using And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], Not [And [Or [Ant [pattern='/login'], Ant [pattern='/favicon.ico']], And [Not [RequestHeaderRequestMatcher [expectedHeaderName=X-Requested-With, expectedHeaderValue=XMLHttpRequest]], MediaTypeRequestMatcher [contentNegotiationStrategy=org.springframework.web.accept.ContentNegotiationManager@191ec193, matchingMediaTypes=[application/xhtml+xml, image/*, text/html, text/plain], useEquals=false, ignoredMediaTypes=[*/*]]]]], org.springframework.security.config.annotation.web.configurers.oauth2.client.OAuth2LoginConfigurer$$Lambda$1061/0x000000080118d268@2f73f0c7]
+2024-05-20T19:57:56.195-03:00 DEBUG 13460 --- [digitalSprint4] [           main] s.w.a.DelegatingAuthenticationEntryPoint : Match found! Executing org.springframework.security.web.authentication.LoginUrlAuthenticationEntryPoint@8debe42
+2024-05-20T19:57:56.196-03:00 DEBUG 13460 --- [digitalSprint4] [           main] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost/oauth2/authorization/google
+2024-05-20T19:57:56.198-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 19, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.198-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 20, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.198-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 21, missCount = 1, failureCount = 0]
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /cotacoes
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {SPRING_SECURITY_SAVED_REQUEST=DefaultSavedRequest [http://localhost/cotacoes?continue]}
+
+Handler:
+             Type = null
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 302
+    Error message = null
+          Headers = [Vary:"Origin", "Access-Control-Request-Method", "Access-Control-Request-Headers", X-Content-Type-Options:"nosniff", X-XSS-Protection:"0", Cache-Control:"no-cache, no-store, max-age=0, must-revalidate", Pragma:"no-cache", Expires:"0", X-Frame-Options:"DENY", Location:"http://localhost/oauth2/authorization/google"]
+     Content type = null
+             Body = 
+    Forwarded URL = null
+   Redirected URL = http://localhost/oauth2/authorization/google
+          Cookies = []
+2024-05-20T19:57:56.199-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 22, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.199-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 23, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.200-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 24, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.200-03:00 DEBUG 13460 --- [digitalSprint4] [           main] org.springframework.test.context.cache   : Spring test ApplicationContext cache statistics: [DefaultContextCache@191e654 size = 1, maxSize = 32, parentContextCount = 0, hitCount = 25, missCount = 1, failureCount = 0]
+2024-05-20T19:57:56.200-03:00 DEBUG 13460 --- [digitalSprint4] [           main] .c.s.DirtiesContextTestExecutionListener : After test method: class [CotacaoControllerTest], method [listarTodasCotacoes], class annotated with @DirtiesContext [false] with mode [null], method annotated with @DirtiesContext [false] with mode [null]
+]]></system-out>
+  </testcase>
+</testsuite>

@@ -1,0 +1,8 @@
+com\example\digitalSprint4\DigitalSprint4Application.class
+com\example\digitalSprint4\config\SecurityConfig.class
+com\example\digitalSprint4\controller\CustomErrorController.class
+com\example\digitalSprint4\model\Cotacao.class
+com\example\digitalSprint4\config\WebConfig.class
+com\example\digitalSprint4\repository\CotacaoRepository.class
+com\example\digitalSprint4\service\CotacaoService.class
+com\example\digitalSprint4\controller\CotacaoController.class

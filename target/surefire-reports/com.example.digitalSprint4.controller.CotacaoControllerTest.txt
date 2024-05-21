@@ -1,0 +1,26 @@
+-------------------------------------------------------------------------------
+Test set: com.example.digitalSprint4.controller.CotacaoControllerTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 3.303 s <<< FAILURE! -- in com.example.digitalSprint4.controller.CotacaoControllerTest
+com.example.digitalSprint4.controller.CotacaoControllerTest.adicionarCotacao -- Time elapsed: 0.133 s <<< FAILURE!
+java.lang.AssertionError: Range for response status value 403 expected:<REDIRECTION> but was:<CLIENT_ERROR>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$is3xxRedirection$4(StatusResultMatchers.java:87)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.digitalSprint4.controller.CotacaoControllerTest.adicionarCotacao(CotacaoControllerTest.java:54)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
+com.example.digitalSprint4.controller.CotacaoControllerTest.listarTodasCotacoes -- Time elapsed: 0.024 s <<< FAILURE!
+java.lang.AssertionError: Status expected:<200> but was:<302>
+	at org.springframework.test.util.AssertionErrors.fail(AssertionErrors.java:59)
+	at org.springframework.test.util.AssertionErrors.assertEquals(AssertionErrors.java:122)
+	at org.springframework.test.web.servlet.result.StatusResultMatchers.lambda$matcher$9(StatusResultMatchers.java:637)
+	at org.springframework.test.web.servlet.MockMvc$1.andExpect(MockMvc.java:214)
+	at com.example.digitalSprint4.controller.CotacaoControllerTest.listarTodasCotacoes(CotacaoControllerTest.java:38)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+
